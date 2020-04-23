@@ -1,0 +1,24 @@
+{
+  "name": "secgrit",
+  "version": "0.0.1",
+  "description": "CLI utility to interact with github's secrets api for repositories.",
+  "main": "cli.js",
+  "scripts": {
+    "test": "tap -R classic ./test" 
+  },
+  "bin": "./cli.js",
+  "keywords": [
+    "cli",
+    "secrets"
+  ],
+  "author": "Isaiah Thiessen",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^17.5.2",
+    "tweetsodium": "0.0.5",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "tap": "^14.10.7"
+  }
+}
