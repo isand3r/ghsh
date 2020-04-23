@@ -4,7 +4,8 @@
   "description": "CLI utility to interact with github's secrets api for repositories.",
   "main": "cli.js",
   "scripts": {
-    "test": "tap -R classic ./test" 
+    "test": "tap -R classic ./test",
+    "lint": "standard ."
   },
   "bin": "./cli.js",
   "keywords": [
@@ -19,6 +20,7 @@
     "yargs": "^15.3.1"
   },
   "devDependencies": {
+    "standard": "^14.3.3",
     "tap": "^14.10.7"
   }
 }
