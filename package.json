@@ -1,5 +1,8 @@
 {
   "name": "@isand3r/ghsh",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "0.0.1",
   "description": "Github Secret Helper - CLI utility to interact with github's secrets api for repositories.",
   "main": "cli.js",
