@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Github Secret Helper - CLI utility to interact with github's secrets api for repositories.",
   "main": "cli.js",
   "scripts": {
