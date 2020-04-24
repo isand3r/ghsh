@@ -1,8 +1,6 @@
 # gsh 
 
-_G_ithub _S_ecret _H_elper
-
-A tiny CLI utility to interact with github actions' secrets REST API.
+Github Secrets Helper - a tiny CLI utility to interact with github actions' secrets REST API.
 
 ## Usage
 
