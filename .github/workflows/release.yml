@@ -4,14 +4,15 @@ on:
       - v[0-9]+.[0-9]+.[0-9]+
 name: Test & Publish
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@master
-      with:
-        registry-url: https://npm.pkg.github.com
-    - run: npm install --ignore-scripts
-    - run: npm run lint
-    - run: npm publish
-      env:
-        - NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}
+  test-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          registry-url: https://npm.pkg.github.com
+      - run: npm install --ignore-scripts
+      - run: npm run lint
+      - run: npm publish
+        env:
+          - NODE_AUTH_TOKEN: ${{ secrets.GPR_TOKEN }}
