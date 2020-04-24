@@ -4,9 +4,7 @@ Github Secrets Helper - a tiny CLI utility to interact with github actions' secr
 
 ## Installation
 
-Due to the wierd way github package registry works - you need to set your registry to https://npm.pkg.github.com/isand3r or you won't be able to install `ghsh` dependencies.
-
-Then run `npm i -g @isand3r/ghsh`.
+`npm i -g @isand3r/ghsh --registry=https://npm.pkg.github.com/isand3r`.
 
 `ghsh --help` should now work.
 
