@@ -1,4 +1,4 @@
-# gsh 
+# ghsh 
 
 Github Secrets Helper - a tiny CLI utility to interact with github actions' secrets REST API.
 
