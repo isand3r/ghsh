@@ -1,8 +1,7 @@
-/*  
+/*
  * file: commands/create/secret.js
  */
 
-const fs = require('fs')
 const createGithubSecret = require('../../lib/apis/githubSecrets').create
 
 module.exports = {
@@ -45,7 +44,7 @@ module.exports = {
       }
     }),
   handler: async (argv) => {
-    const { repo, owner, name, value, token} = argv
+    const { repo, owner, name, value, token } = argv
     const result = await createGithubSecret(repo, owner, name, value, token)
     if (result.status === 204) {
       console.log(`Secret "${name}" created on ${owner}/${repo}`)

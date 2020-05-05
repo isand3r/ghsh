@@ -1,8 +1,7 @@
-/*  
+/*
  * file: commands/read/secrets.js
  */
 
-const fs = require('fs')
 const listGithubSecrets = require('../../lib/apis/githubSecrets').list
 
 module.exports = {
@@ -33,7 +32,7 @@ module.exports = {
       }
     }),
   handler: async (argv) => {
-    const { repo, owner, token} = argv
+    const { repo, owner, token } = argv
     const result = await listGithubSecrets(repo, owner, token)
     if (result.status === 200) {
       console.log(result.json)

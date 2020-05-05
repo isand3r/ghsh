@@ -1,4 +1,4 @@
-/*  
+/*
  * file: commands/delete/secret.js
  */
 
@@ -48,4 +48,3 @@ module.exports = {
     }
   }
 }
-
