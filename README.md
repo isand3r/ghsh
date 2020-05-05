@@ -1,11 +1,17 @@
-# gsh 
+# ghsh 
 
 Github Secrets Helper - a tiny CLI utility to interact with github actions' secrets REST API.
 
+## Installation
+
+`npm i -g @isand3r/ghsh --registry=https://npm.pkg.github.com/isand3r`.
+
+`ghsh --help` should now work.
+
 ## Usage
 
-- `gsh create secret -t myGithubAccessToken -n SECRET_NAME -v 'super_secret_value' -o isander -r secgrit ` - creates a secret on isand3r/secgrit with key/value pair `SECRET_NAME/super_secret_value`. If the secret `SECRET_NAME` already exists, overwrites the value.
+- `ghsh create secret -t myGithubAccessToken -n SECRET_NAME -v 'super_secret_value' -o isander -r myrepo ` - creates a secret on isand3r/myrepo with key/value pair `SECRET_NAME/super_secret_value`. If the secret `SECRET_NAME` already exists, overwrites the value.
 
-- `gsh delete secret -t myGithubAccessToken -n SECRET_NAME -o isand3r -r secgrit` - deletes secret `SECRET_NAME` from isand3r/secgrit
+- `ghsh delete secret -t myGithubAccessToken -n SECRET_NAME -o isand3r -r myrepo` - deletes secret `SECRET_NAME` from isand3r/myrepo
 
-- `gsh read secrets -t myGithubAccesstoken -o isand3r -r secgrit - lists all secrets that exist on isand3r/secgrit`
+- `ghsh read secrets -t myGithubAccesstoken -o isand3r -r myrepo - lists all secrets that exist on isand3r/myrepo`
