@@ -15,3 +15,9 @@ Github Secrets Helper - a tiny CLI utility to interact with github actions' secr
 - `ghsh delete secret -t myGithubAccessToken -n SECRET_NAME -o isand3r -r myrepo` - deletes secret `SECRET_NAME` from isand3r/myrepo
 
 - `ghsh read secrets -t myGithubAccesstoken -o isand3r -r myrepo - lists all secrets that exist on isand3r/myrepo`
+
+## Issues & Contributions
+
+PRs are most welcome!
+
+Bug/Feature/Suggestion issues are also welcome!
