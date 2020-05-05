@@ -7,8 +7,7 @@
   "description": "Github Secret Helper - CLI utility to interact with github's secrets api for repositories.",
   "main": "cli.js",
   "scripts": {
-    "test": "tap -R classic ./test",
-    "lint": "standard ."
+    "lint": "standard"
   },
   "bin": "./cli.js",
   "keywords": [
